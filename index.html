@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehr trinken :)</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+
+    <!-- Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fs-heading">Trinkerinnerung</h1>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="input">
+                    <div class="input-element">
+                        <label for="timer">Wie oft möchtest du daran erinnert werden etwas zu trinken?</label>
+                        <select name="timer" id="timer">
+                            <option value="15">Alle 15 Minuten</option>
+                            <option value="30">Alle 30 Minuten</option>
+                            <option value="45">Alle 45 Minuten</option>
+                            <option value="60">Jede Stunde</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button onclick="start()">
+                            Und los!
+                        </button>
+                        <button class="hide" onclick="stop()">
+                            Genug getrunken!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
+</html>
